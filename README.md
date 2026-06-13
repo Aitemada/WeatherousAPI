@@ -10,7 +10,7 @@ The Backend/Frontend modules are shipped in seperate directories, and can be ins
 
 Project uses Nginx proxy to serve Frontend onto http://localhost:8000 by default and automatically route all `/api/v1/*` traffic to the internal Spring Boot container via corresponding interface actions from user.
 
-(picture)![Interface screenshot](WeatherousInterface.png)
+![Interface screenshot](WeatherousInterface.png)
 
 The interface prompts you to choose the country, and after this you are prompted to choose the city. For the sake of reducing the complexity, list of cities is a static JSON-object featuring "Country:[City0, City1..]" fields. You can easily integrate some kind of DB into the project if you'd like. 
 
