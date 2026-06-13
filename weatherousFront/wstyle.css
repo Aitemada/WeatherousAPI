@@ -1,0 +1,125 @@
+  body { 
+  font-family: 'Arial', sans-serif; 
+  background-image: url(./mainbckg.png);
+  color: #fff; 
+  margin: 0; 
+  text-align: center;
+  }
+.container { 
+width: 60%; 
+margin: 50px auto; 
+background-color: #afafaf; 
+padding: 40px; 
+border-radius: 15px; 
+color: #000; 
+box-shadow: 0px 4px 10px rgba(0,0,0,0.5); 
+}
+
+select, input { 
+width: 45%; 
+padding: 12px; 
+margin: 10px; 
+border: 1px solid #ccc; 
+border-radius: 4px; 
+font-size: 16px; 
+}
+
+.mode-container {
+margin: 20px 0; 
+}
+
+.mode-btn { 
+background-color: #555; 
+color: white; 
+padding: 10px 20px; 
+border: none;
+border-radius: 4px;
+ cursor: pointer;
+ font-weight: bold;
+ margin: 0 10px;
+ transition: 0.3s; 
+}
+ 
+.mode-btn.active { 
+background-color: #8b0000; 
+box-shadow: 0 0 10px #8b0000; 
+}
+.mode-btn:not(.active):hover{
+box-shadow: 1px 0px 19px #afafaf inset;
+color: #ffffff;
+background-color: #616161;
+font-weight: bolder;
+}
+
+.tooltip { 
+font-style: italic; 
+color: #333;
+margin-top: 10px; 
+font-size: 14px; 
+min-height: 20px; 
+}
+
+#getWetBtn { 
+background-color: #8b0000; 
+color: white; 
+padding: 15px 30px; 
+border: none; 
+border-radius: 4px; 
+cursor: pointer; 
+font-weight: bold; 
+font-size: 18px; 
+width: 50%; 
+opacity: 0.5; 
+transition: 0.3s; 
+}
+#getWetBtn.ready { 
+opacity: 1; 
+box-shadow: 0 4px 15px rgba(139, 0, 0, 0.5); 
+}
+
+.results-wrapper { 
+display: flex; 
+flex-wrap: wrap; 
+justify-content: center; 
+gap: 15px; 
+margin-top: 30px; }
+
+.weather-box { 
+background-color: white; 
+border: 2px solid #8b0000; 
+padding: 15px; 
+border-radius: 8px; 
+width: 120px; 
+text-align: center; 
+box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+}
+.weather-box img { 
+width: 50px; 
+height: 50px; 
+}
+.weather-box h4 { 
+margin: 5px 0; 
+color: #8b0000; 
+}
+
+footer{
+background: #434343a6;
+align-items: baseline;
+text-align: end;
+position: fixed;
+bottom: 0;
+width: 100%;
+margin-top: auto;
+box-shadow: 2px 2px #b0b0b0;
+}
+
+#sneaky{
+color: #ffe4c400;
+font-family: times;
+}
+
+#sneaky:hover{
+color: #ffe4c4
+}
+
+.hidden { display: none; }

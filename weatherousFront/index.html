@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="wstyle.css"> <link rel="icon" type="image/x-icon" href="weathrsic.png">
+    <title>WeatherousAPI</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 style="text-shadow: rgb(161 161 161) -1px -1px, #00000014 5px 3px 3px; font-style: italic;">Weatherous: Your weather here'n'now.</h1>
+    
+    <!-- Location Selection -->
+    <select id="countrySelect">
+        <option value="" disabled selected>Choose Country...</option>
+        <option value="Belarus">Belarus</option>
+        <option value="Japan">Japan</option>
+        <option value="Finland">Finland</option>
+    </select>
+    
+    <select id="citySelect" disabled>
+        <option value="" disabled selected>Choose City...</option>
+    </select>
+
+    <!-- Mode Selection -->
+    <div class="mode-container">
+        <p id="modeInstruction"><strong>Choose one of the modes:</strong></p>
+        <button id="btnForecast" class="mode-btn" onclick="selectMode('FORECAST')">Forecast</button>
+        <button id="btnPastcast" class="mode-btn" onclick="selectMode('PASTCAST')">Pastcast</button>
+        <div id="tooltip" class="tooltip"></div>
+    </div>
+
+    <!-- Date Picker (Hidden before you choose Pastcast) -->
+    <input type="date" id="datePicker" class="hidden">
+
+    <br><br>
+    <button id="getWetBtn" disabled onclick="fetchWeather()">Get Weather</button>
+    
+    <!-- Dynamic Results -->
+    <div id="resultsContainer" class="results-wrapper"></div>
+</div>
+
+<script src="wscrpt.js" defer></script>
+    <footer>    
+    <div>
+        <address style="display: flex; align-self: flex-end; justify-self: right; flex-flow: column; color: #ffffff;">
+        Contact us:
+        <a href="mailto:rimskykoldun@gmail.com">Our Email</a> 
+        </address>
+        <span id="copyR">&copy;WeatherousAPI, 2024</span>
+    </div>
+    <span id="sneaky">Made by Alex S., or Aitemu|</span><span>Hope you're having a great day.</span>
+    </footer>
+</body>
+</html>
