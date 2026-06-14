@@ -20,11 +20,11 @@ The API has two main endpoints, which divide the functionality into two distinct
 
 ![Forecast response screenshot](resultFore.png)
 
-- **Pastcast Mode:** additional "choose date..." field appears. The user must choose any past date they are interested in within the WeatherAPI's limitations, and "Get Weather" button will pull the forecast data And the moon fase data for this specific date. There would be only one "box" for the data as you can imagine, and it will include the weather data on the left, and the moon fase data on the right.     
+- **Pastcast Mode:** additional "choose date..." field appears. The user must choose any past date they are interested in within the WeatherAPI's limitations, and "Get Weather" button will pull the forecast data And the moon phase data for this specific date. There would be only one "box" for the data as you can imagine, and it will include the weather data on the left, and the moon phase data on the right.     
 
 ![Pastcast result screenshot](resultPast.png)
 
-*icons/ directory has some weather condition icons missing, and those are going to be displayed as plain text. You can change/add more icons by simply formatting their filenames as "weather-condition-name.png", but be aware that the nake shall match the name returned by the WeatherAPI. You can find the list of all names at the https://www.weatherapi.com/docs/
+*icons/ directory has some weather condition icons missing, and those are going to be displayed as plain text. You can change/add more icons by simply formatting their filenames as "weather-condition-name.png", but be aware that the name shall explicitly match the names returned by the WeatherAPI. You can find the list of all available names at the [WeatherAPI docs](https://www.weatherapi.com/docs/)
 
 ## Icon Credits 
 
