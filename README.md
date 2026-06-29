@@ -6,7 +6,7 @@ An all-in-one API module that makes it possible to fetch WeatherAPI into a basic
 
 ## How to use
 
-The Backend/Frontend modules are shipped in seperate directories, and can be instantiated into a service right away with Docker Compose.
+The Backend/Frontend modules are shipped in separate directories, and can be instantiated into a service right away with Docker Compose.
 
 Project uses Nginx proxy to serve Frontend onto http://localhost:8000 by default and automatically route all `/api/v1/*` traffic to the internal Spring Boot container via corresponding interface actions from user.
 
